@@ -5,17 +5,21 @@ import re
 import unittest
 
 
-def to_labels(genres_list: str):
+def to_labels(genres_str: str):
     """ Convert the input string to a list of genre strings.
 
+    `genres_str` formatted as specified by movies_metadata.csv
+
+    :param genres_str: string containing the genres annotations
+    :return: a list of strings
     """
-    genres_list = ast.literal_eval(genres_list)
+    genres_list = ast.literal_eval(genres_str)
     return [g["name"] for g in genres_list]
 
 
 class UtilsTestCase(unittest.TestCase):
     def setUp(self):
-        with open("config/parameters.json") as fh:  # load test strings from .JSON file
+        with open("config/parameters.json") as fh:  # load model and test strings from .JSON file
             d = json.load(fh)
 
         self.genres_str = d["test"]["genres_string"]
