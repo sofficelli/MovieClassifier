@@ -1,0 +1,18 @@
+{
+  "path_dataset": "dataset/",
+  "filename": "movies_metadata.csv",
+  "no_overview_strings": ["no overview", "no overview.","no overview found", "no overview found.","no overview yet", "no overview yet.", "no movie overview available", "no movie overview available.","no plot overview available"],
+  "no_overview_pattern": "no (?:movie |plot )?overview(?: found| yet| available)?.?",
+  "train": {
+    "path_model": "models/",
+    "model_name": "movie_classifier.joblib",
+    "label_binarizer": "label_binarizer.joblib",
+    "num_epochs": 250
+  },
+  "test": {
+    "title": "Mega Python vs. Gatoroid",
+    "overview": "A fanatical animal rights activist (Debbie Gibson) releases giant pythons into the Everglades, believing the wild animals should be set free. When they start decimating the native animal population, an over-zealous park ranger (Tiffany) feeds experimental steroids to wild alligators so they can fight back. The giant pythons and gargantuan alligators go on a killing spree, and it is now left up to the two feuding women to put aside their differences to put a stop to the creatures and the destruction.",
+    "genres_string": "[{'id': 28, 'name': 'Action'}, {'id': 27, 'name': 'Horror'}, {'id': 878, 'name': 'Science Fiction'}]",
+    "genres_list": ["Action", "Horror", "Science Fiction"]
+  }
+}
