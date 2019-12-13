@@ -50,3 +50,10 @@ improves predictions. Moreover, the label space has been further reduced to the 
 as some combinations of genres are really rare to occur.
 In the pre-processing phase, `nan` and empty values are removed from the dataset. Text strings are lower cased and 
 english stopwords are filtered out before training.
+
+### Parameters
+Parameters for training and tests are defined in the configuration file `parameters.json` located in `config`.
+
+### Unit Testing
+Auxiliary functions are defined in `utils.py` and are unit tested when directly executed. 
+Furthermore, `test_prediction` is defined to test the model against the movie defined in `config/parameters.json`.
