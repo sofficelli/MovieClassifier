@@ -9,7 +9,7 @@ download it from the [MovieLens](https://www.kaggle.com/rounakbanik/the-movies-d
 │   └── requirements.txt
 ├── dataset
 │   └── movies_metadata.csv
-├── main.py
+├── movie_classifier
 ├── models
 │   ├── label_binarizer.joblib
 │   └── movie_classifier.joblib
