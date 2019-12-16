@@ -21,7 +21,7 @@ download it from the [MovieLens](https://www.kaggle.com/rounakbanik/the-movies-d
 ## Dependencies
 In order to reproduce the code, create a virtual environment in the directory root
 
-```virtualenv -m python3 <your_virtualenv_name>```
+```virtualenv -p python3 <your_virtualenv_name>```
 
 Then, activate the virtual environment
 
